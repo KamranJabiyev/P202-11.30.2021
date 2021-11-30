@@ -1,0 +1,12 @@
+#partners{
+    .partner{
+        display: flex;
+        width: 100%;
+        &-item{
+            width: (100%/3);
+            height: $base-size*100;
+            border: 2px solid;
+            background-color: $secondary-color;
+        }
+    }
+}

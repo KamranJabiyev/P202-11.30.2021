@@ -1,0 +1,27 @@
+#products{
+    .product{
+        background-color: $main-color;
+        width: 100%;
+        height: $base-size*50;
+        display: flex;
+
+        &-item{
+            width: calc(100%/3);
+            height: $base-size*50;
+            border: 2px solid black;
+        }
+    }
+}
+
+@media screen and(max-width:$large) {
+    #products{
+        .product{
+            flex-wrap: wrap;
+            &-item{
+                width: 100%;
+                height: $base-size*50;
+                border: 2px solid black;
+            }
+        }
+    }
+}

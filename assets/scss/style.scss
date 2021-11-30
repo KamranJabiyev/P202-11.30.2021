@@ -1,0 +1,25 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/extends";
+@import "./partials/pages/home/index";
+@import "./partials/pages/about/about";
+
+// .box{
+//     @include bgColor();
+//     margin: 20px;
+// }
+
+.btn-success{
+    @extend %btn;
+}
+
+.btn-warning{
+    @extend %btn;
+    background-color: orange;
+    color: black;
+}
+
+.btn-danger{
+    @extend %btn;
+    background-color: red;
+}
